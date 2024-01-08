@@ -30,8 +30,8 @@ const SignUpForm = ({ setToken }) => {
         result.success = false;
         setToken(null);
       } else {
-        console.log(result);
         setToken(result.token);
+        setError("");
       }
     } catch (error) {
       setError(error.message);
